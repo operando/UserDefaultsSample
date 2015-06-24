@@ -13,6 +13,7 @@
 		B34345481B3AEDD800EE9F10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B34345471B3AEDD800EE9F10 /* Images.xcassets */; };
 		B343454B1B3AEDD800EE9F10 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B34345491B3AEDD800EE9F10 /* LaunchScreen.xib */; };
 		B34345571B3AEDD800EE9F10 /* UserDefaultsSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34345561B3AEDD800EE9F10 /* UserDefaultsSampleTests.swift */; };
+		B34345611B3AFABC00EE9F10 /* TextData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34345601B3AFABC00EE9F10 /* TextData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		B34345501B3AEDD800EE9F10 /* UserDefaultsSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserDefaultsSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B34345551B3AEDD800EE9F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B34345561B3AEDD800EE9F10 /* UserDefaultsSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsSampleTests.swift; sourceTree = "<group>"; };
+		B34345601B3AFABC00EE9F10 /* TextData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				B34345471B3AEDD800EE9F10 /* Images.xcassets */,
 				B34345491B3AEDD800EE9F10 /* LaunchScreen.xib */,
 				B343453E1B3AEDD800EE9F10 /* Supporting Files */,
+				B34345601B3AFABC00EE9F10 /* TextData.swift */,
 			);
 			path = UserDefaultsSample;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				B34345431B3AEDD800EE9F10 /* ViewController.swift in Sources */,
 				B34345411B3AEDD800EE9F10 /* AppDelegate.swift in Sources */,
+				B34345611B3AFABC00EE9F10 /* TextData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

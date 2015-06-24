@@ -29,18 +29,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func save(sender: UIButton) {
-        let userDefaults = NSUserDefaults.standardUserDefaults()
-        userDefaults.setObject(text.text, forKey: "text")
+//        let userDefaults = NSUserDefaults.standardUserDefaults()
+//        userDefaults.setObject(text.text, forKey: "text")
+//        // 値の保存等を即時反映するならsynchronizeする
+//        userDefaults.synchronize()
+        TextData.setText(text.text)
     }
 
     @IBAction func load(sender: UIButton) {
-        let userDefaults = NSUserDefaults.standardUserDefaults()
-        let text = userDefaults.stringForKey("text")
-        label.text = text
+//        let userDefaults = NSUserDefaults.standardUserDefaults()
+//        let text = userDefaults.stringForKey("text")
+//        label.text = text
+        label.text = TextData.text()
     }
     @IBAction func deleteButton(sender: UIButton) {
-        let userDefaults = NSUserDefaults.standardUserDefaults()
-        userDefaults.removeObjectForKey("text")
+//        let userDefaults = NSUserDefaults.standardUserDefaults()
+//        userDefaults.removeObjectForKey("text")
+        TextData.removeText()
     }
 }
 
