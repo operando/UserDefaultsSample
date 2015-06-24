@@ -8,18 +8,35 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var text: UITextField!
+    @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        text?.delegate = self
+    }
+
+    func textFieldShouldReturn(textField: UITextField!) -> Bool{
+        text?.text = textField.text
+        // キーボードを閉じる
+        textField.resignFirstResponder()
+        return true
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func save(sender: UIButton) {
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        userDefaults.setObject(text.text, forKey: "text")
+    }
 
+    @IBAction func load(sender: UIButton) {
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        let text = userDefaults.stringForKey("text")
+        label.text = text
+    }
 }
 
