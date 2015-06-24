@@ -38,5 +38,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let text = userDefaults.stringForKey("text")
         label.text = text
     }
+    @IBAction func deleteButton(sender: UIButton) {
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        userDefaults.removeObjectForKey("text")
+    }
 }
 
